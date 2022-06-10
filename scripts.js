@@ -140,7 +140,7 @@ function checkConfirmPass(){
     var target=document.getElementById("inputPassword").value;
     var target1=document.getElementById("inputConfirmPassword").value;
 
-    if(target1.includes(target, 0)){
+    if(target===target1){
         //alert("is equal now!");
         document.getElementById("checkStr").disabled = false;
         document.getElementById("feedbackDiv2").innerHTML = "";
